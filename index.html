@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
 	<title>sashabardis.photo</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poiret+One&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <div class="container">
+    <div class="container container--header">
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -25,42 +26,44 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Contacts</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Заказать фотосессию</a>
+          <li class="main-nav__item main-nav__item--last">
+            <a class="main-nav__link" href="#">Prices</a>
           </li>
         </ul>
       </nav>
-      <div class="social">
-        <a class="social__item" href="#">vk</a>
-        <a class="social__item" href="#">inst</a>
+      <div class="social social--header">
+        <a class="social__link social__link--vk" href="https://vk.com/" target="_blank">vk</a>
+        <a class="social__link social__link--inst" href="https://www.instagram.com/" target="_blank">inst</a>
       </div>
     </div>
   </header>
   <main>
     <div class="container">
-      <div class="persona">
-        <div class="persona__wrapper">
-          <span class="persona__name">Alexandra Bardis</span>
+      <div class="promo">
+        <div class="persona">
+          <span class="persona__name"><b>Alexandra Bardis</b></span>
           <span class="persona__description">Photographer</span>
         </div>
-      </div>
-      <div class="photo"></div>
-      <div class="order">
-        <a href="#">Заказать фотосессию</a>
+
+        <div class="photo"></div>
+
+        <div class="order">
+          <a class="order__link" href="#">Заказать фотосессию</a>
+        </div>
       </div>
     </div>
   </main>
   <footer class="page-footer">
-    <div class="container">
+    <div class="container container--footer">
       <div class="info">
         <span class="info__name">Alexandra Bardis</span>
-        <span class="info__data">© 2018</span>
+        <!-- <span class="info__data">© 2018</span> -->
       </div>
       <div class="social">
-        <a class="social__item" href="#">vk</a>
-        <a class="social__item" href="#">inst</a>
+        <a class="social__link social__link--vk" href="https://vk.com/" target="_blank">vk</a>
+        <a class="social__link social__link--inst" href="https://www.instagram.com/" target="_blank">inst</a>
       </div>
-      <div class="copyright">made by three_samples   |   © 2018</div>
+      <div class="copyright">made by three_samples | © 2018</div>
     </div>
   </footer>
 </body>

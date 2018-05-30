@@ -1,0 +1,46 @@
+.social {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  &--header {
+    padding: 7px 0;
+  }
+}
+
+.social__link {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  border: 1px solid #fffff0;
+  border-radius: 5px;
+
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+
+  background-color: transparent;
+}
+
+.social__link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.social__link--vk::before {
+  width: 26px;
+  height: 15px;
+  background-position: -10px -93px;
+}
+
+.social__link--inst::before {
+  width: 21px;
+  height: 21px;
+  background-position: -10px -52px;
+}
